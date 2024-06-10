@@ -1,0 +1,64 @@
+/*:root[titlepreface="᠎"] .Tab .fav{
+	margin-left: 11px !important;
+	margin-right: 12px !important;
+}
+
+/*:root[titlepreface="᠎"] .Tab[data-active="true"] .body::before{
+	width: 2px !important;
+	height: 14px !important;
+	background-color: #FF8279 !important;
+	border-radius: 50px !important;
+	top: 27.5% !important;
+}
+
+
+/*----------- Collapsed sidebar stuff from here ----------------------------*/
+
+
+
+@media (max-width: 160px) {
+    #root.root .top-horizontal-box{
+		/*opacity: 0.5 !important;*/
+		
+		/*flex-wrap: wrap !important;*/
+		
+		/*height: 0px !important;
+
+		transition: height 10000ms ease !important;*/
+	}
+	
+	#root.root .nav-item[data-active="true"]{
+		scale: 1 !important;
+		transform: scale(1,1) !important;
+		opacity: 1 !important;
+	}
+	
+	#root.root .nav-item:not([data-active="true"]){
+		display: none !important!;
+		opacity: 0 !important;
+	}
+	
+	#root.root .static-btns{
+		display: none !important;
+	}
+	
+	
+	#root.root .Tab .close{
+		display: none !important;
+	}
+	
+	#root.root .BottomBar{
+		opacity: 0;
+		transition: opacity 100ms ease !important;
+	}
+	
+	#root.root .Tab .exp{
+		display: none !important;
+	}
+	
+	#root.root .badge{ /*This no worky*/
+		display: none !important;
+	}
+
+}
+

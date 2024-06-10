@@ -1,0 +1,32 @@
+/*Sidebar itself*/
+#sidebar-select-box{
+	border: none !important;
+	max-width: 38px !important;
+	width: 38px !important;
+	min-width: 38px !important;
+}
+/*icons inside sidebar*/
+.sidepanel-icon, .sidepanel-browser-icon{
+	margin: none !important;
+	padding: 8px !important;
+}
+}
+/*icons inside sidebar when hovered*/
+.sidepanel-icon:hover, .sidepanel-browser-icon:hover, .sidebar2-icon:hover{
+	/* background-color: var(--button-hover-bgcolor) !important; */
+	background-color: red !important;
+	box-shadow: none !important;
+}
+
+/*icons inside sidebar when selected*/
+.sidePanel-icon[checked="true"]{
+	background-color: red !important;
+}
+
+/* Hide the bottom items in right sidebar */
+#bottomButtonBox{
+	display: none !important;
+}
+
+/*==================== Sidebar popout ====================*/
+

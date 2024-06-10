@@ -1,0 +1,91 @@
+	/* Center all URL-bar/Search-bar text at all times */
+	#urlbar #urlbar-input{
+		text-align: center !important;
+	}
+	
+	/* Change Icon of "Search Go" button to search icon 
+	#urlbar-go-button{
+		list-style-image: url(chrome://global/skin/icons/search-glass.svg) !important;
+	}
+	
+	/* Hide original search icon from URL-bar 
+	#urlbar:not(.searchButton) > #urlbar-input-container > #identity-box[pageproxystate="invalid"] #identity-icon{
+		list-style-image: none !important;
+	}
+	*/
+	
+	/* Always hide identity-icon label example "Floorp" in settings */
+	#identity-icon-label{
+		display: none !important;
+	}
+	
+	#urlbar #identity-box, #urlbar #page-action-buttons, #urlbar #tracking-protection-icon-container {
+		opacity: 0 !important;
+		transition: opacity 100ms ease !important;
+	}
+	
+	#urlbar:hover #identity-box, #urlbar:hover #page-action-buttons, #urlbar:hover #tracking-protection-icon-container {
+		opacity: 1 !important;
+		transition: opacity 250ms ease !important;
+	}
+	
+	/* Fix size */
+	#urlbar{
+		--urlbar-height: 30px !important;
+	}
+
+
+
+/* ==================================== SEARCH CHANGES ======================================== */
+/* Remove border on background of search popup */
+#urlbar-background{
+	border: none !important;
+}
+
+/*  */
+.urlbarView{
+	margin-left: 4px;
+	margin-right: 4px;
+	border: none !important;
+	
+	
+	width: calc(100% - 2 * (3.5px)) !important;
+}
+
+
+#urlbar-results{
+	padding-bottom: 2px !important; /* Decrease bottom padding to make up for tab padding */
+}
+
+
+
+
+/* This is the "This time, search with:" bar */ 
+.search-one-offs{
+	border: none !important;
+	
+	padding-top: 0px !important;
+	padding-bottom: 4px !important;	
+}
+
+/* Hide the search settings button */
+#urlbar-anon-search-settings{
+	display: none !important;
+}
+
+
+.searchbar-engine-one-off-item{
+	/* Decrease margin on search options */
+	margin-right: 4px !important;
+	
+	/* Fix too small size of buttons */
+	min-width: 32px !important;
+	min-height: 32px !important;
+}
+
+/* Decrease right margin of "This time, search with:" text */
+.search-panel-one-offs-header-label{
+	padding-right: 4px !important;
+}
+
+

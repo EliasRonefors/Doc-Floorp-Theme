@@ -1,0 +1,140 @@
+
+	/*============================================================================================*/
+	/* NAV BAR */
+	
+	/*------------------------------------------------*/
+	/* Fix windows buttons */
+	
+	:root {
+	--firefoxcss-control-buttons-margin: 144px;
+	}
+	
+	#navigator-toolbox #nav-bar {
+	padding-right: var(--firefoxcss-control-buttons-margin) !important;
+	}
+	
+	
+	/*------------------------------------------------*/
+	/* Make Tab Bar join with URL Bar*/
+	
+	:root {
+		--tab-border-radius: 3px !important;
+		--NavbarWidth: 2;
+		--TabsHeight: 28;
+		--TabsBorder: 8;
+		--NavbarHeightSmall: calc(var(--TabsHeight) + var(--TabsBorder))
+	}
+	
+	.toolbar-items{
+		padding-left: calc(100vw - 229px)
+	}
+
+	
+	#nav-bar {
+		margin-top: -40px !important;
+		height: 39px !important;
+	}
+	#TabsToolbar{
+		min-height: 40px !important;
+	}
+	
+	#urlbar-container {
+		min-width: 0px !important;
+		flex: auto !important;
+	}
+	
+	@media screen and (max-width:100px) {
+		#TabsToolbar {
+			margin-right: 0 !important;
+		}
+		#nav-bar {
+			margin-left: 0 !important;
+		}
+	}
+	
+	.tabbrowser-tab{
+		margin-bottom: 3px !important;
+	}
+
+	/*------------------------------------------------*/
+	/* Make active tab to hidden tab */
+	
+	tab:not([selected="true"]), 
+	[part="overflow-start-indicator"], 
+	[part="overflow-end-indicator"], 
+	#scrollbutton-up, 
+	#scrollbutton-down, 
+	#TabsToolbar .titlebar-spacer, 
+	.tabbrowser-tab[selected="true"] .tab-text, 
+	.tabbrowser-tab[selected="true"] .tab-close-button, 
+	.tab-line, 
+	.tab-throbber {
+		display: none !important;
+	}
+	
+	.tabbrowser-tab[selected="true"] {
+		min-width: 37px !important;
+		max-width: 37px !important;
+	}
+	
+	tab, 
+	.tabbrowser-tab {
+		padding-left: 0 !important;
+		margin-left: 0 !important;
+		
+		-moz-window-dragging: drag;
+		
+		z-index: 100;
+	}
+	
+	.tab-background {
+		outline: none !important;
+		box-shadow: none !important;
+		display: none;
+	}
+	
+	.tab-icon-image  { 
+		display: block !important;
+		height: 32px !important; 
+		width: 32px !important; 
+		border-radius: 10px !important;
+	}
+	
+	.tab-content::before{
+		display: none !important;
+	}
+	
+	.tab-icon-overlay{
+		display: none !important;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		
+	/* Changes icon of the "side-by-side" button aka focused real tab */
+	.tab-icon-image {
+		content: url('sideBySide.svg') !important;
+		scale: 0.5;
+	}
+	
+	/*------------------------------------------------*/
+	/* Hide all buttons in active tab context menu except for split tab and extensions */
+	
+	#main-window #context_openANewTab,
+	#main-window #context_reloadTab,
+	#main-window #context_toggleMuteTab,
+	#main-window #context_playTab,
+	#main-window #context_pinTab,
+	#main-window #context_duplicateTab,
+	#main-window #context_bookmarkTab,
+	#main-window #context_moveTabOptions,
+	#main-window #context_reopenInContainer,
+	#main-window #context_toggleToPrivateContainer,
+	#main-window #context_selectAllTabs,
+	#main-window #context_closeTab,
+	#main-window #context_closeTabOptions,
+	#main-window #context_undoCloseTab,
+	#main-window #simple-translate_sienori-menuitem-_translatePageOnTab,
+	#context_MoveTabToOtherWorkspace,
+	#main-window #tabContextMenu menuseparator {
+		display: none !important;
+	}
