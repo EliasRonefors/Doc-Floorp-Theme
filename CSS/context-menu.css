@@ -1,0 +1,28 @@
+menuitem{
+	margin: 0px 3px 0px 3px !important;
+	border-radius: 5px !important;
+}
+
+menuitem, menupopup > menu{
+	margin: 0px 3px 0px 3px !important;
+	border-radius: 5px !important;
+}
+
+menuseparator{
+	margin: 4px 0px 4px 0px !important;
+}
+
+
+.menupopup-arrowscrollbox{
+	border-radius: 8px !important;
+}
+
+
+#context-navigation{
+	padding-bottom: 0px !important;
+}
+
+.menu-iconic-icon{
+	border-radius: 5px !important;
+	width: 100% !important;
+}
