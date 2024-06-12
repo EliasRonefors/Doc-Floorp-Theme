@@ -40,6 +40,7 @@ If you haven't already, [install Floorp](https://floorp.app/).
 5. **Add the CSS customizations**
    * Press the alt-key on your keyboard to show the Floorp menu bar. Under the "CSS"-option, press "Open CSS-folder". A folder will open, go to its parent folder (should be titled "chrome").
    * Download the files in the folders titled "CSS" and "SVG" from this GitHub repository. Put the contents of the CSS folder you downloaded into the chrome\CSS folder you opened in the previous step. Put the contents of the SVG folder you downloaded just directly into the chrome folder.
+   * If nothing changes after restarting Floorp, make sure to press alt and look at the CSS dropdown in the menu bar. There should now be options like "context-menu.css" in the list, make sure they're ticked.
 
 6. **Celebration**
    * That should be it! Good job. If something isn't working or you need help do reach out to me. Continue reading to see some recommendations from me.
