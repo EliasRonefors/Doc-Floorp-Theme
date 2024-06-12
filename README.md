@@ -1,5 +1,8 @@
 # Doc's Floorp Theme
 A work in progress theme for the firefox-based browser Floorp.
+![image](https://github.com/EliasRonefors/Doc-Floorp-Theme/assets/90244703/389e7085-bd6d-4c6e-a334-bebf9fd73ab8)
+![image](https://github.com/EliasRonefors/Doc-Floorp-Theme/assets/90244703/62545bbc-2f24-46a8-940e-6462fea4025d)
+
 
 ## A quick warning
 This theme for Floorp isn't very polished, there are small inconsistensies everywhere and it is very heavily targeted towards my personal use of Floorp which may not align with yours. Therefore I'm warning you that some things may break if you use Floorp in a different way from how I use it. 
